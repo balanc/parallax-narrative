@@ -1,97 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
-	<title>CSS Parallax Demo</title>
-	<link rel="stylesheet" href="css/main.css">
+	<title>A Day in the Life of a Lighthouse</title>
+	<link href="css/main.css" rel="stylesheet">
 </head>
+<body class="home">
 
-<body class='home'>
+<!-- 
+  <div class="debug">
+    <label><input type="checkbox"> Debug</label>
+  </div> -->
 
-	<main>
+  <main class="parallax">
+	    <section id="group1" class="group">
+	      <div class="parallaxLayer base"></div>
+	      <header>
+	      	<h1 class="title">A Day in the Life of a Lighthouse</h1>
+	      </header>
+	    </section>
+	    <section id="group2" class="group">
+	      <div class="parallaxLayer fore1"></div>
+	      <div class="parallaxLayer base"></div>
+	      <div class="parallaxLayer back1"></div>
+	      <div class="parallaxLayer back2"></div>
+	      <div class="parallaxLayer deep2"></div>
+	      <p>Sunrises are greeted by a calm mist that rolls through the sea. Seagulls and gentle waves fill the early morning soundscape, nothing more.</p>
+	    </section>
+	    <section id="group3" class="group">
+	      <div class="parallaxLayer base"></div>
+	      <div class="parallaxLayer fore1"></div>
+	      <div class="parallaxLayer fore2"></div>
+	      <div class="parallaxLayer fore3"></div>
+	      <div class="parallaxLayer fore4"></div>
+	      <p>A weather buoy out at sea is the only other permanent company in this more remote part of the world.</p>
+	    </section>
+	    <section id="group4" class="group">
+	      <div class="parallaxLayer base"></div>
+	      <div class="parallaxLayer back1"></div>
+	      <div class="parallaxLayer back2"></div>
+	      <div class="parallaxLayer deep2"></div>
+	      <p>As the day picks up, usually so do the wind and waves crashing about the rocks below.</p>
+	    </section>
+	    <section id="group5" class="group">
+	      <div class="parallaxLayer base"></div>
+	      <div class="parallaxLayer fore1"></div>
+	      <div class="parallaxLayer fore2"></div>
+	      <div class="parallaxLayer fore3"></div>
+	      <p>Because of modern navigation, rarely are there any kind of ships seen venturing through this part of the sea. They are a welcome sight.</p>
+	    </section>
+	    <section id="group6" class="group">
+	      <div class="parallaxLayer fore3"></div>
+	      <div class="parallaxLayer base"></div>
+	      <div class="parallaxLayer back1"></div>
+	      <div class="parallaxLayer back2"></div>
+	      <div class="parallaxLayer deep2"></div>
+	      <p>The only few human visitors to ever set foot here are those who maintain the lighthouse and buoy. They tend to not stay more than they need to.</p>    
+	    </section>
+	    <section id="group7" class="group">
+	      <div class="parallaxLayer base"></div>
+	      <div class="parallaxLayer fore1"></div>
+	      <div class="parallaxLayer fore2"></div>
+	      <div class="parallaxLayer fore3"></div>
+	      <p>It's uncommon to see a large storm moving through. Seagulls announce them before ever seeing it come over the horizon.</p>
+	    </section>
+	    <section id="group8" class="group">
+	      <div class="parallaxLayer fore1"></div>
+	      <div class="parallaxLayer base"></div>
+	      <div class="parallaxLayer back1"></div>
+	      <div class="parallaxLayer deep2"></div>
+	      <p>The sea turns violent and the wind cuts through the air, but usually briefly.</p>
+	    </section>
+	    <section id="group9" class="group">
+	      <div class="parallaxLayer base"></div>
+	      <div class="parallaxLayer fore1"></div>
+	      <div class="parallaxLayer fore2"></div>
+	      <div class="parallaxLayer fore3"></div>
+	      <p>Days seem to end quickly, but the colorful expressions of light at sunset are always welcome.</p>
+	    </section>
+	    <section id="group10" class="group">
+	      <div class="parallaxLayer base"></div>
+	      <div class="parallaxLayer back1"></div>
+	      <div class="parallaxLayer back2"></div>
+	      <div class="parallaxLayer deep2"></div>
+	      <p>When night draws near, the lighthouse begins its sole task. Even if that task is mostly symbolic now, it will continue to alert ships of the dangerous coastline night after night.</p>
+	    </section>
+    </main>
 
-		<section class="slide" id="title">
-			<header>
-				<h1>A Day in the Life of a Lighthouse</h1>
-			</header>
-		</section>
-
-
-		<section class="slide" id="slide1">
-			<header class="slideLayer">
-				<h2>Slide One</h2>
-				<p>Sunrises are greeted by a calm mist that rolls through the sea. Seagulls and gentle waves fill the early morning soundscape, nothing more.</p>
-			</header>
-      <figure class="object" id="fore1"></figure>
-		</section>
-
-
-		<section class="slide" id="slide2">
-			<header>
-				<h2>Slide Two</h2>
-        <p>A weather buoy out at sea is the only other permanent company in this more remote part of the world.</p>
-			</header>
-      <figure class="object" id="fore2"></figure>
-		</section>
-
-		<section class="slide" id="slide3">
-			<header>
-				<h2>Slide Three</h2>
-        <p>As the day picks up, usually so do the wind and waves crashing about the rocks below.</p>
-			</header>
-      <figure class="object" id="fore3"></figure>
-		</section>
-
-		<section class="slide" id="slide4">
-			<header>
-				<h2>Slide Four</h2>
-        <p>Because of modern navigation, rarely are there any kind of ships seen venturing through this part of the sea. They are a welcome sight.</p>
-			</header>
-      <figure class="object" id="fore4"></figure>
-		</section>
-
-		<section class="slide" id="slide5">
-			<header>
-				<h2>Slide Five</h2>
-        <p>The only few human visitors to ever set foot here are those who maintain the lighthouse and buoy. They tend to not stay more than they need to.</p>
-			</header>
-      <figure class="object" id="fore5"></figure>
-		</section>
-
-    <section class="slide" id="slide6">
-      <header>
-        <h2>Slide Six</h2>
-        <p>It's uncommon to see a large storm moving through. Seagulls announce them before ever seeing it come over the horizon.</p>
-      </header>
-      <figure class="object" id="fore6"></figure>
-    </section>
-
-    <section class="slide" id="slide7">
-      <header>
-        <h2>Slide Seven</h2>
-        <p>The sea turns violent and the wind cuts through the air, but usually briefly.</p>
-      </header>
-      <figure class="object" id="fore7"></figure>
-    </section>
-
-    <section class="slide" id="slide8">
-      <header>
-        <h2>Slide Eight</h2>
-        <p>Days seem to end quickly, but the colorful expressions of light at sunset are always welcome.</p>
-      </header>
-      <figure class="object" id="fore8"></figure>
-    </section>
-
-    <section class="slide" id="slide9">
-      <header>
-        <h2>Slide Nine</h2>
-        <p>When night draws near, the lighthouse begins its sole task. Even if that task is mostly symbolic now, it will continue to alert ships of the dangerous coastline night after night.</p>
-      </header>
-      <figure class="object" id="fore9"></figure>
-    </section>
-
-	</main>
+<!-- debugging script -->
+  <script> 
+    var debugInput = document.querySelector("input");
+    function updateDebugState() {
+        document.body.classList.toggle('debug-on', debugInput.checked);
+    }
+    debugInput.addEventListener("click", updateDebugState);
+    updateDebugState();
+  </script>
 
 </body>
 </html>
